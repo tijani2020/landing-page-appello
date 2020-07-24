@@ -1,0 +1,68 @@
+/*****************************************
+Table Of Contents:
+
+01. Header
+02. Navigation
+03. Main
+- Customers
+- Description
+- Features
+- Features Lightboxes
+- Details
+- Video
+- Pricing
+- Testimonials
+- Newsletter
+04. Footer
+  - Copyright
+  - Back To Top Button
+
+19. Media Queries
+******************************************/
+
+
+/*****************************************
+Colors:
+- Backgrounds, buttons, bullets, icons - blue #5f4dee
+- Backgrounds, light button, light body text - light gray #f3f7fd
+- Headings text - black #333
+- Body text - dark gray #555
+******************************************/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Open Sans';
+}
+
+/*------ header -------*/
+header {
+
+}
+
+
+
+/*------ main -------*/
+main {
+
+}
+
+
+
+/*------ footer -------*/
+footer {
+
+}
+
+
+
+/*------ Media Queries -------*/

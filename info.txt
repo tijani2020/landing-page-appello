@@ -1,0 +1,10 @@
+1. https://inovatik.com/tivo-landing-page/index.html
+2. https://inovatik.com/leno-landing-page/index.html
+3. https://inovatik.com/evolo-landing-page/index.html
+4. https://preview.uideck.com/items/basic/
+
+
+
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+https://swiperjs.com/get-started/

@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 /*****************************************
 Table Of Contents:
 01. Header
@@ -30,6 +32,7 @@ Colors:
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html, 
@@ -37,14 +40,13 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
-    box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Open Sans';
 }
 
 /*------ header -------*/
 header {
-
+  height: 100vh;
 }
 
 
@@ -54,10 +56,49 @@ main {
 
 }
 
+#partners {
 
+}
+
+#services {
+  height: 100vh;
+
+}
+
+
+#features {
+  height: 100vh;
+
+}
+
+#take-action {
+  height: 100vh;
+
+}
+
+#vedio {
+  height: 100vh;
+
+}
+
+#pricing {
+  height: 100vh;
+
+}
+
+#testimonials {
+  height: 100vh;
+
+}
+
+#newsletter {
+  height: 100vh;
+
+}
 
 /*------ footer -------*/
 footer {
+
 
 }
 

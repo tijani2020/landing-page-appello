@@ -23,7 +23,17 @@ button:hover {
   background-color: #fff;
 }
 
+.section-head {
+  text-align: center;
+  width: 60%;
+  h2 {
+    color: $primary-color;
+  }
+  h3 {
+    font-size: 35px;
+  }
 
+}
 
 /*****************************************
 Table Of Contents:
@@ -161,12 +171,46 @@ main {
 }
 
 #partners {
- 
-
+  height: 150px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #services {
   height: 100vh;
+  padding: 50px 7%;
+
+  .services-container {
+    @include flex-center();
+    flex-direction: column;
+    width: 100%;
+
+    .services-box {
+      @include flex-center();
+      justify-content: space-between;
+      margin-top: 60px;
+
+      .service-item {
+        width: 25%;
+        text-align: center;
+        .ser-img img {
+          height: 200px;
+          margin-bottom: 20px;
+        }
+
+        .ser-description {
+          
+          h4 {
+            margin-bottom: 10px;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+  }
 
 }
 

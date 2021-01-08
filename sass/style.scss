@@ -32,6 +32,7 @@ button:hover {
 .section-head {
   text-align: center;
   width: 60%;
+  text-align: center;
   h2 {
     color: $primary-color;
   }
@@ -302,18 +303,140 @@ main {
 }
 
 #take-action {
-  height: 100vh;
+  @include flex-center();
+
+  .take-action-container {
+    @include flex-center();
+    justify-content: space-around;
+
+    .take-action-img {
+      width: 45%;
+      img {
+        height: 350px;
+      }
+    }
+
+    .features-details-content {
+      width: 45%;
+      h3 {
+        font-size: 35px;
+      }
+
+      p {
+        margin: 20px 0;
+        color: $Body-text-color;
+      }
+
+      ul li {
+       list-style: none;
+       margin: 10px;
+       color: $Body-text-color;
+
+       i {
+         font-size: 10px;
+         color: $primary-color;
+         margin-right: 10px;
+       }
+      }
+
+      button {
+        padding: 15px 25px;
+        margin-top: 20px;
+        font-size: 15px;
+      }
+    }
+  }
 
 }
 
 #vedio {
-  height: 100vh;
+  background-color: $secondary-color;
+  @include flex-center();
+  flex-direction: column;
+
+  .vedio-cotainer {
+    @include flex-center();
+    position: relative;
+    img {
+      height: 500px;
+      border-radius: 15px;
+    }
+
+    i {
+      position: absolute;
+      font-size: 70px;
+      color: $primary-color;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+ 
+   }
+  p {
+    color: $Body-text-color;
+    width: 60%;
+    margin-top: 25px;
+    text-align: center;
+  }
 
 }
 
 #pricing {
-  height: 100vh;
+  @include flex-center();
+  flex-direction: column;
 
+  .pricing-container {
+    width: 100%;
+
+    .section-head {
+      width: 100%;
+    }
+
+  .pricing-options {
+    @include flex-center();
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+
+    .pricing-option {
+      width: 30%;
+      text-align: center;
+      border: 0.05px solid gray;
+      padding: 20px;
+      border-radius: 10px;
+
+      h3 {
+        font-size: 45px;
+        margin: 10px 0;
+      }
+
+      .lign {
+        border-bottom: 0.05px solid #555;
+        width: 60%;
+        margin: 20px auto;
+      }
+
+      ul li {
+        list-style: none;
+        text-align: left;
+        margin: 15px;
+
+        i {
+          margin-right: 10px;
+        }
+
+        .fa-check {
+          color: $primary-color;
+        }
+      }
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 15px;
+      margin-top: 15px;
+    }
+  }
+  }
 }
 
 #testimonials {

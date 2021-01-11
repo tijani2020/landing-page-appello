@@ -552,6 +552,12 @@ main {
 
 /*------ footer -------*/
 footer {
+  background-image: url(../Images/bg-footer.svg);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  color: #fff
+  @include flex-center();
 
 
 }

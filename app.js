@@ -1,15 +1,23 @@
-//Get the button:
-navbar = document.getElementById("navbar");
+// mobile nav start
 
+const hamber = document.getElementById('hamber')
+const navicone = document.getElementById('navicone')
+const mobileNav = document.getElementById('mobile-nav')
 
+mobileNav.style.display = "none";
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+hamber.addEventListener('click', (e) => {
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    navbar.style.display = "block";
+  if (mobileNav.style.display === "block") {
+    mobileNav.style.display = "none";
+    navicone.className = "fas fa-bars"
+    navicone.style.color = "#fff"
+
   } else {
-    navbar.style.display = "none";
+    mobileNav.style.display = "block";
+    navicone.className = "fas fa-times"
+    navicone.style.color = "#5f4dee"
   }
-}
+}) 
+
+// mobile nav end

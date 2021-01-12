@@ -113,7 +113,7 @@ body {
 nav {
   @include flex-space-between();
   position: fixed;
-  height: 100px;
+  height: 70px;
   width: 100%;
   top: 0;
   left: 0;
@@ -141,48 +141,76 @@ nav {
 
     }
   }
-  .hamber i {
+  #hamber i {
     font-size: 25px;
     color: #fff;
   }
+
 }
+
+
+#mobile-nav {
+  display: none;
+  height: 70vh;
+  margin-top: 70px;
+  ul {
+    @include flex-space-between();
+    flex-direction: column;
+    height: 100%;
+
+    li {
+      list-style: none;
+      margin: 10px;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+
 
 // Media query 
 
   @include tablet {
     nav {
       flex-direction: column;
+      height: 100px;
 
       .menu {
         display: flex;
       }
 
-      .hamber {
+      #hamber {
         display: none;
       }
     }
   }
+
+  
   
   // desktop
   
   @include desktop {
     nav {
       flex-direction: row;
+      height: 100px;
 
       .menu {
         display: flex;
       }
 
-      .hamber {
+      #hamber {
         display: none;
       }
     }
     
   }
 
-#mobile-nav {
-  display: none;
-}
 
 
 header {

@@ -1,6 +1,6 @@
 @import "_variables.scss";
 
-// Medium devices
+// tablet
 
 @mixin tablet {
   @media screen and  (min-width: 576px) and (max-width: 768px) {
@@ -8,6 +8,8 @@
   }
 }
 
+
+// tablet - desktop
 @mixin tablet-desktop {
   @media screen and  (min-width: 576px) {
       @content;
@@ -76,11 +78,10 @@ Table Of Contents:
 01. Header
 02. Navigation
 03. Main
-- Customers
-- Description
+- partners
+- services
 - Features
-- Features Lightboxes
-- Details
+- take-action 
 - Video
 - Pricing
 - Testimonials
@@ -109,22 +110,25 @@ body {
 /*------ header -------*/
 
 nav {
+  @include flex-space-between();
   position: fixed;
   height: 100px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
-  @include flex-space-between();
   padding: 0 7%;
 
   .menu {
     @include flex-space-between();
+
     ul {
       @include flex-center();
+
       li {
         list-style: none;
         margin: 10px;
+
         a {
           text-decoration: none;
           color: $secondary-color;
@@ -145,30 +149,34 @@ nav {
 }
 
 
-
 header {
-  height: 100vh;
+
+  @include flex-space-between();
   background-image: url(../Images/header-bg.svg);
   background-size: cover;
   background-position: center;
-  @include flex-center();
-  justify-content: space-between;
   padding: 100px 7%;
+  height: 100vh;
+
   .header-content {
     width: 40%;
     color: #fff;
+
     h1 {
       font-size: 55px;
     }
+
     p {
       margin: 30px 0;
     }
+
     button {
       border: 2px solid $primary-color;
       color: $primary-color;
       background-color: #fff;
       padding: 15px 35px;
       font-size: 15px;
+
       &:hover {
         border: 2px solid #fff;
         color: #fff;
@@ -189,9 +197,10 @@ header {
 /*------ main -------*/
 
 #partners {
+  @include flex-space-between();
   height: 150px;
   padding: 0 7%;
-  @include flex-space-between();
+  
 }
 
 #services {
@@ -208,6 +217,7 @@ header {
       .service-item {
         width: 25%;
         text-align: center;
+
         .ser-img img {
           height: 200px;
           margin-bottom: 20px;
@@ -357,9 +367,9 @@ header {
 }
 
 #vedio {
-  background-color: $secondary-color;
   @include flex-center();
   flex-direction: column;
+  background-color: $secondary-color;
 
   .vedio-cotainer {
     @include flex-center();
@@ -557,12 +567,12 @@ header {
 
 /*------ footer -------*/
 footer { 
+  @include flex-center();
   background-image: url(../Images/bg-footer.svg);
   background-position: center;
   background-size: cover;
   height: 450px;
   color: #fff;
-  @include flex-center();
   position: relative;
 
   .footer-container {

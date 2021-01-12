@@ -1,9 +1,38 @@
 @import "_variables.scss";
 
+// Medium devices
+
+@mixin tablet {
+  @media screen and  (min-width: 576px) and (max-width: 768px) {
+      @content;
+  }
+}
+
+@mixin tablet-desktop {
+  @media screen and  (min-width: 576px) {
+      @content;
+  }
+}
+
+// desktop
+
+@mixin desktop {
+  @media screen and  (min-width: 768px) {
+      @content;
+  }
+}
+
+
 @mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin flex-space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
@@ -42,7 +71,7 @@ button:hover {
 
 }
 
-/*****************************************
+/*********************************
 Table Of Contents:
 01. Header
 02. Navigation
@@ -59,17 +88,7 @@ Table Of Contents:
 04. Footer
   - Copyright
   - Back To Top Button
-19. Media Queries
-******************************************/
-
-
-/*****************************************
-Colors:
-- Backgrounds, buttons, bullets, icons - blue #5f4dee
-- Backgrounds, light button, light body text - light gray #f3f7fd
-- Headings text - black #333
-- Body text - dark gray #555
-******************************************/
+***********************************/
 
 * {
     margin: 0px;
@@ -96,16 +115,11 @@ nav {
   top: 0;
   left: 0;
   z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-space-between();
   padding: 0 7%;
 
   .menu {
-    @include flex-center();
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-space-between();
     ul {
       @include flex-center();
       li {
@@ -173,17 +187,11 @@ header {
 
 
 /*------ main -------*/
-main {
- 
-
-}
 
 #partners {
   height: 150px;
   padding: 0 7%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-space-between();
 }
 
 #services {
@@ -194,8 +202,7 @@ main {
     width: 100%;
 
     .services-box {
-      @include flex-center();
-      justify-content: space-between;
+     @include flex-space-between();
       margin-top: 60px;
 
       .service-item {
@@ -392,8 +399,7 @@ main {
     }
 
   .pricing-options {
-    @include flex-center();
-    justify-content: space-between;
+    @include flex-space-between();
     margin-top: 50px;
     width: 100%;
 
@@ -493,9 +499,8 @@ main {
     border-radius: 5px;
 
     form {
-      @include flex-center();
+      @include flex-space-between();
       flex-direction: column;
-      justify-content: space-between;
       height: 40%;
   
       label:first-child {
@@ -551,7 +556,7 @@ main {
 }
 
 /*------ footer -------*/
-footer {
+footer { 
   background-image: url(../Images/bg-footer.svg);
   background-position: center;
   background-size: cover;
@@ -566,8 +571,7 @@ footer {
     padding: 20px 7%;
 
     .footer-infos {
-      @include flex-center();
-      justify-content: space-between;
+      @include flex-space-between();
       margin-bottom: 50px;
 
       

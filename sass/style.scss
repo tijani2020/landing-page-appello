@@ -10,6 +10,7 @@
 
 
 // tablet - desktop
+
 @mixin tablet-desktop {
   @media screen and  (min-width: 576px) {
       @content;
@@ -121,6 +122,7 @@ nav {
 
   .menu {
     @include flex-space-between();
+    display: none;
 
     ul {
       @include flex-center();
@@ -139,10 +141,44 @@ nav {
 
     }
   }
-  .hamber {
-    display: none;
+  .hamber i {
+    font-size: 25px;
+    color: #fff;
   }
 }
+
+// Media query 
+
+  @include tablet {
+    nav {
+      flex-direction: column;
+
+      .menu {
+        display: flex;
+      }
+
+      .hamber {
+        display: none;
+      }
+    }
+  }
+  
+  // desktop
+  
+  @include desktop {
+    nav {
+      flex-direction: row;
+
+      .menu {
+        display: flex;
+      }
+
+      .hamber {
+        display: none;
+      }
+    }
+    
+  }
 
 #mobile-nav {
   display: none;

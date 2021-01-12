@@ -25,6 +25,12 @@
   }
 }
 
+ // Large devices (laptops/desktops, 992px and up) 
+@mixin large-devices {
+   @media only screen and (min-width: 992px) {
+     @content;
+}
+
 
 @mixin flex-center {
   display: flex;
@@ -148,7 +154,6 @@ nav {
 
 }
 
-
 #mobile-nav {
   display: none;
   height: 70vh;
@@ -172,17 +177,17 @@ nav {
   }
 }
 
-
-
 // Media query 
 
   @include tablet {
-    nav {
+    #navbar {
       flex-direction: column;
-      height: 100px;
+      height: 120px;
+      padding-top: 20px;
 
       .menu {
         display: flex;
+
       }
 
       #hamber {
@@ -190,8 +195,6 @@ nav {
       }
     }
   }
-
-  
   
   // desktop
   
@@ -212,22 +215,23 @@ nav {
   }
 
 
-
 header {
 
   @include flex-space-between();
+  flex-direction: column-reverse;
   background-image: url(../Images/header-bg.svg);
   background-size: cover;
   background-position: center;
-  padding: 100px 7%;
+  padding: 80px 7%;
   height: 100vh;
 
   .header-content {
-    width: 40%;
+    width: 90%;
     color: #fff;
+    margin-top: 15px;
 
     h1 {
-      font-size: 55px;
+      font-size: 35px;
     }
 
     p {
@@ -240,6 +244,7 @@ header {
       background-color: #fff;
       padding: 15px 35px;
       font-size: 15px;
+      margin-top: 25px;
 
       &:hover {
         border: 2px solid #fff;
@@ -251,12 +256,91 @@ header {
   }
 
   .header-img img {
-    height: 350px;
+    height: 150px;
 
   }
 }
 
+// Media query 
 
+@include tablet {
+  header {
+    flex-direction: row;
+    
+    .header-content {
+      width: 50%;
+  
+      h1 {
+        font-size: 35px;
+      }
+  
+      button {
+        margin-top: 0;
+      }
+  
+    }
+  
+    .header-img img {
+      height: 180px;
+  
+    }
+  }
+
+  }
+  
+
+// desktop
+
+@include desktop {
+  header {
+    flex-direction: row;
+    
+    .header-content {
+      width: 50%;
+  
+      h1 {
+        font-size: 45px;
+      }
+  
+      button {
+        margin-top: 0;
+      }
+  
+    }
+  
+    .header-img img {
+      height: 250px;
+  
+    }
+  }
+  
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@include large-devices {
+  header {
+    flex-direction: row;
+    
+    .header-content {
+      width: 40%;
+  
+      h1 {
+        font-size: 55px;
+      }
+
+      button {
+        margin-top: 0;
+      }
+  
+    }
+  
+    .header-img img {
+      height: 300px;
+  
+    }
+  }
+}
 
 /*------ main -------*/
 

@@ -101,7 +101,7 @@
     }
   
   
-  header {
+  .header {
   
     @include flex-space-between();
     flex-direction: column-reverse;
@@ -111,7 +111,7 @@
     padding: 80px 7%;
     height: 100vh;
   
-    .header-content {
+    .header__content {
       width: 90%;
       color: #fff;
       margin-top: 15px;
@@ -141,7 +141,7 @@
   
     }
   
-    .header-img img {
+    .header__img img {
       height: 150px;
   
     }
@@ -150,10 +150,10 @@
   // Media query 
   
   @include tablet {
-    header {
+    .header {
       flex-direction: row;
       
-      .header-content {
+      .header__content {
         width: 50%;
     
         h1 {
@@ -166,7 +166,7 @@
     
       }
     
-      .header-img img {
+      .header__img img {
         height: 180px;
     
       }
@@ -178,10 +178,10 @@
   // desktop
   
   @include desktop {
-    header {
+    .header {
       flex-direction: row;
       
-      .header-content {
+      .header__content {
         width: 50%;
     
         h1 {
@@ -194,7 +194,7 @@
     
       }
     
-      .header-img img {
+      .header__img img {
         height: 250px;
     
       }
@@ -205,10 +205,10 @@
   
   /* Large devices (laptops/desktops, 992px and up) */
   @include large-devices {
-    header {
+    .header {
       flex-direction: row;
       
-      .header-content {
+      .header__content {
         width: 40%;
     
         h1 {
@@ -221,7 +221,7 @@
     
       }
     
-      .header-img img {
+      .header__img img {
         height: 300px;
     
       }

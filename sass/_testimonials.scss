@@ -1,0 +1,36 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#testimonials {
+    height: 300px;
+    .testimonials-container {
+      @include flex-center();
+  
+      i {
+        font-size: 45px;
+        color: $primary-color;
+      }
+  
+      .testimonial {
+        @include flex-center();
+        margin: 0 5%;
+  
+        .peopls img {
+          height: 200px;
+          border-radius: 50%;
+        }
+  
+        .qoutes{
+          margin-left: 5%;
+  
+          p {
+            color: #555;
+            font-style: italic;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  
+  }
+  

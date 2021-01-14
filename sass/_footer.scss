@@ -1,0 +1,76 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+footer { 
+    @include flex-center();
+    background-image: url(../Images/bg-footer.svg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    color: #fff;
+    position: relative;
+  
+    .footer-container {
+      position: absolute;
+      bottom: 0;
+      padding: 20px 7%;
+  
+      .footer-infos {
+        @include flex-space-between();
+        margin-bottom: 50px;
+  
+        
+        .about,
+        .links,
+        .contact {
+          width: 30%;
+          font-size: 15px;
+  
+          li {
+            list-style: none;
+            margin-bottom: 10px;
+            
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+  
+            i {
+              font-size: 14px;
+              margin-right: 10px;
+            }
+  
+          }
+        }
+  
+        .links li i {
+          font-size: 8px;
+        }
+  
+        .contact li i:nth-child(3) {
+          margin-left: 15px;
+  
+        }
+        
+        h4 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+  
+      }
+  
+      .footer-lign {
+        background-color: rgb(181, 178, 178);
+        height: 0.08px;
+        margin-bottom: 20px;
+  
+      }
+  
+      .copyright {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  
+  }
+  

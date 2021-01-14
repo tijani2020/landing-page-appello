@@ -1,0 +1,33 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#vedio {
+    @include flex-center();
+    flex-direction: column;
+    background-color: $secondary-color;
+  
+    .vedio-cotainer {
+      @include flex-center();
+      position: relative;
+      img {
+        height: 500px;
+        border-radius: 15px;
+      }
+  
+      i {
+        position: absolute;
+        font-size: 70px;
+        color: $primary-color;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+   
+     }
+    p {
+      color: $Body-text-color;
+      width: 60%;
+      margin-top: 25px;
+      text-align: center;
+    }
+  
+  }

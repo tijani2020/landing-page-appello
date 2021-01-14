@@ -1,0 +1,60 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#pricing {
+    @include flex-center();
+    flex-direction: column;
+  
+    .pricing-container {
+      width: 100%;
+  
+      .section-head {
+        width: 100%;
+      }
+  
+    .pricing-options {
+      @include flex-space-between();
+      margin-top: 50px;
+      width: 100%;
+  
+      .pricing-option {
+        width: 30%;
+        text-align: center;
+        border: 0.05px solid gray;
+        padding: 20px;
+        border-radius: 10px;
+  
+        h3 {
+          font-size: 45px;
+          margin: 10px 0;
+        }
+  
+        .lign {
+          border-bottom: 0.05px solid #555;
+          width: 60%;
+          margin: 20px auto;
+        }
+  
+        ul li {
+          list-style: none;
+          text-align: left;
+          margin: 15px;
+  
+          i {
+            margin-right: 10px;
+          }
+  
+          .fa-check {
+            color: $primary-color;
+          }
+        }
+      }
+  
+      button {
+        padding: 15px 25px;
+        font-size: 15px;
+        margin-top: 15px;
+      }
+    }
+    }
+  }

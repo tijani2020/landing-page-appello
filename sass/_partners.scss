@@ -1,0 +1,9 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#partners {
+    @include flex-space-between();
+    height: 150px;
+    padding: 0 7%;
+    
+  }

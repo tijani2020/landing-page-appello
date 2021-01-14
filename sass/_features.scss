@@ -18,7 +18,7 @@
        width: 60%;
        margin-top: 40px;
 
-       .features__menu__items {
+       &__items {
         @include flex-center();
   
         .features__menu__item {
@@ -50,14 +50,14 @@
     flex-direction: column;
     margin-top: 15px;
 
-    .features__details__img {
+    &__img {
       width: 80%;
       img {
         height: 200px;
       }
     }
 
-    .features__details__content {
+    &__content {
       margin-top: 25px;
       width: 80%;
       h3 {
@@ -97,7 +97,7 @@
 @include tablet-desktop {
   .features__details {
 
-    .features__details__img {
+    &__img {
       width: 65%;
 
       img {
@@ -105,7 +105,7 @@
       }
     }
 
-    .features__details__content {
+    &__content {
       width: 65%;
      
     }
@@ -116,7 +116,7 @@
   .features__details {
     flex-direction: row;
 
-    .features__details__img {
+    &__img {
       width: 45%;
 
       img {
@@ -124,7 +124,7 @@
       }
     }
 
-    .features__details__content {
+    &__content {
       width: 45%;
      
     }

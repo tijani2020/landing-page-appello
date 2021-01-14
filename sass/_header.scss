@@ -1,7 +1,7 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-nav {
+#navbar {
     @include flex-space-between();
     position: fixed;
     height: 70px;
@@ -15,10 +15,10 @@ nav {
       @include flex-space-between();
       display: none;
   
-      ul {
+      .menu__items {
         @include flex-center();
   
-        li {
+        .menu__item {
           list-style: none;
           margin: 10px;
   
@@ -43,12 +43,13 @@ nav {
     display: none;
     height: 70vh;
     margin-top: 70px;
-    ul {
+
+    .mobile-nav__items {
       @include flex-space-between();
       flex-direction: column;
       height: 100%;
   
-      li {
+      .mobile-nav__item {
         list-style: none;
         margin: 10px;
   
@@ -84,7 +85,7 @@ nav {
     // desktop
     
     @include desktop {
-      nav {
+      #navbar {
         flex-direction: row;
         height: 100px;
   

@@ -4,7 +4,8 @@
 
 #services {
     height: 100%;
-    .services-container {
+
+    .services__container {
       @include flex-center();
       flex-direction: column;
       width: 100%;
@@ -13,24 +14,24 @@
   
   }
   
-  .services-box {
+  .services__items {
     @include flex-space-between();
     flex-direction: column;
      margin-top: 60px;
      width: 100%;
   
-     .service-item {
+     .services__item {
        width: 80%;
        text-align: center;
        margin-top: 40px;
   
   
-       .ser-img img {
+       .services__item__img img {
          height: 200px;
          margin-bottom: 20px;
        }
   
-       .ser-description {
+       .services__item__description {
          
          h4 {
            margin-bottom: 10px;
@@ -44,11 +45,11 @@
     
     #services  {
   
-      .services-box {
+      .services__items {
         flex-direction: row;
         flex-wrap: wrap;
   
-        .service-item {
+        .services__item {
           width: 45%;
         }
       }
@@ -61,10 +62,10 @@
   
     #services  {
   
-      .services-box {
+      .services__items {
         flex-direction: row;
   
-        .service-item {
+        .services__item {
           width: 20%;
         }
       }

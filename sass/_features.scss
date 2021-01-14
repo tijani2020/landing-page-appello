@@ -5,22 +5,23 @@
     background-color: $secondary-color;
     height: 100%;
   
-    .features-container {
+    .features__container {
       @include flex-center();
       flex-direction: column;
       width: 100%;
   
-      .features-head p {
+      .features__head p {
         margin-top: 15px;
       }
   
-      .features-menu {
+      .features__menu {
        width: 60%;
        margin-top: 40px;
-        ul {
+
+       .features__menu__items {
         @include flex-center();
   
-        li {
+        .features__menu__item {
           list-style: none;
           margin: 3%;
           width: 30%;
@@ -43,19 +44,19 @@
   }
   }
 
-  .features-details{
+  .features__details{
     @include flex-space-between();
     flex-direction: column;
     margin-top: 15px;
 
-    .features-details-img {
+    .features__details__img {
       width: 80%;
       img {
         height: 200px;
       }
     }
 
-    .features-details-content {
+    .features__details__content {
       margin-top: 25px;
       width: 80%;
       h3 {
@@ -67,16 +68,19 @@
         color: $Body-text-color;
       }
 
-      ul li {
+      .features__list__item {
+        .features__list__items {
        list-style: none;
        margin: 10px;
        color: $Body-text-color;
 
        i {
-         font-size: 10px;
-         color: $primary-color;
-         margin-right: 10px;
-       }
+        font-size: 10px;
+        color: $primary-color;
+        margin-right: 10px;
+      }
+        }
+    
       }
 
       button {
@@ -90,9 +94,9 @@
   }
   
 @include tablet-desktop {
-  .features-details {
+  .features__details {
 
-    .features-details-img {
+    .features__details__img {
       width: 65%;
 
       img {
@@ -100,7 +104,7 @@
       }
     }
 
-    .features-details-content {
+    .features__details__content {
       width: 65%;
      
     }
@@ -108,10 +112,10 @@
 }
 
 @include large-devices {
-  .features-details {
+  .features__details {
     flex-direction: row;
 
-    .features-details-img {
+    .features__details__img {
       width: 45%;
 
       img {
@@ -119,7 +123,7 @@
       }
     }
 
-    .features-details-content {
+    .features__details__content {
       width: 45%;
      
     }

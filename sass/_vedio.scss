@@ -1,14 +1,15 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-#vedio {
+.vedio {
     @include flex-center();
     flex-direction: column;
     background-color: $secondary-color;
   
-    .vedio-cotainer {
+    &__cotainer {
       @include flex-center();
       position: relative;
+
       img {
         height: 500px;
         border-radius: 15px;
@@ -23,6 +24,7 @@
       }
    
      }
+     
     p {
       color: $Body-text-color;
       width: 60%;

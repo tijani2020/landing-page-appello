@@ -1,7 +1,7 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-footer { 
+.footer { 
     @include flex-center();
     background-image: url(../Images/bg-footer.svg);
     background-position: center;
@@ -10,12 +10,12 @@ footer {
     color: #fff;
     position: relative;
   
-    .footer-container {
+    &__container {
       position: absolute;
       bottom: 0;
       padding: 20px 7%;
   
-      .footer-infos {
+      .footer__infos {
         @include flex-space-between();
         margin-bottom: 50px;
   
@@ -43,11 +43,11 @@ footer {
           }
         }
   
-        .links li i {
+        .links  &items__link &__link i {
           font-size: 8px;
         }
   
-        .contact li i:nth-child(3) {
+        .contact &__list &__item i:nth-child(3) {
           margin-left: 15px;
   
         }

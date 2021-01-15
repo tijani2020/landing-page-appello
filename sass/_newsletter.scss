@@ -2,10 +2,10 @@
 @import "_mixins.scss";
 
 
-#newsletter {
+.newsletter {
     @include flex-center();
   
-    .newsletter-container {
+    &__container {
      @include flex-center();
      flex-direction: column;
     
@@ -15,7 +15,7 @@
       margin-bottom: 50px;
     }
   
-    .newsletter-box {
+    .newsletter__box {
       width: 90%;
       height: 90%;
       background-color: $secondary-color;

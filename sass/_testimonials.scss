@@ -1,9 +1,10 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-#testimonials {
+.testimonials {
     height: 300px;
-    .testimonials-container {
+
+    &__container {
       @include flex-center();
   
       i {
@@ -11,16 +12,16 @@
         color: $primary-color;
       }
   
-      .testimonial {
+      .testimonials__item {
         @include flex-center();
         margin: 0 5%;
   
-        .peopls img {
+        &__img img {
           height: 200px;
           border-radius: 50%;
         }
   
-        .qoutes{
+        &__qoutes{
           margin-left: 5%;
   
           p {

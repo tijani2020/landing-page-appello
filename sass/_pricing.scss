@@ -1,23 +1,24 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-#pricing {
+.pricing {
     @include flex-center();
     flex-direction: column;
   
-    .pricing-container {
+    &__container {
       width: 100%;
   
       .section-head {
         width: 100%;
       }
+      
   
-    .pricing-options {
+    .pricing__options {
       @include flex-space-between();
       margin-top: 50px;
       width: 100%;
   
-      .pricing-option {
+      &__item {
         width: 30%;
         text-align: center;
         border: 0.05px solid gray;
@@ -35,22 +36,24 @@
           margin: 20px auto;
         }
   
-        ul li {
-          list-style: none;
-          text-align: left;
-          margin: 15px;
-  
-          i {
-            margin-right: 10px;
+        .options__list {
+          &__item {
+            list-style: none;
+            text-align: left;
+            margin: 15px;
+    
+            i {
+              margin-right: 10px;
+            }
+    
+            .fa-check {
+              color: $primary-color;
+            }
           }
-  
-          .fa-check {
-            color: $primary-color;
-          }
-        }
+        } 
       }
   
-      button {
+      .btn {
         padding: 15px 25px;
         font-size: 15px;
         margin-top: 15px;

@@ -5,6 +5,7 @@
     @include flex-center();
     flex-direction: column;
     background-color: $secondary-color;
+    height: 100%;
   
     &__cotainer {
       @include flex-center();

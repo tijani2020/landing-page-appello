@@ -27,7 +27,7 @@
      
     p {
       color: $Body-text-color;
-      width: 60%;
+      width: 90%;
       margin-top: 25px;
       text-align: center;
     }
@@ -36,7 +36,10 @@
 
   @include tablet {
 
-    .vedio__cotainer {
+    .vedio {
+
+    
+    &__cotainer {
 
       img {
         height: 300px;
@@ -48,10 +51,16 @@
     }
   }
 
+  p {
+    width: 80%;
+  }
+}
+
 
   @include desktop {
 
-    .vedio__cotainer {
+    .vedio{ 
+      &__cotainer {
 
       img {
         height: 400px;
@@ -63,10 +72,17 @@
     }
   }
 
+  p {
+    width: 70%;
+  }
+}
+
 
   @include large-devices{
 
-    .vedio__cotainer {
+    .vedio {
+
+    &__cotainer {
 
       img {
         height: 500px;
@@ -77,4 +93,9 @@
         font-size: 70px;
       }
     }
+
+   p {
+    width: 65%;
+   }
   }
+}

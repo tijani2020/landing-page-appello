@@ -13,10 +13,13 @@
     .section-head {
       width: 100%;
       margin-bottom: 50px;
+
+      h3 {
+        font-size: 20px;
+      }
     }
   
     .newsletter__box {
-      width: 90%;
       height: 90%;
       background-color: $secondary-color;
       padding: 50px;
@@ -30,7 +33,7 @@
         label:first-child {
           background-color: #fff;
           padding: 0 20px;
-          width: 55%;
+          width: 100%;
           text-align: start;
           @include flex-center();
           color: #555;
@@ -62,7 +65,7 @@
     
     .socials {
       @include flex-center();
-      width: 50%;
+      width: 80%;
       margin-top: 40px;
   
       i {

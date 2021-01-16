@@ -103,7 +103,8 @@
   
   .header {
   
-    @include flex-space-between();
+    @include flex-center();
+    justify-content: space-around;
     flex-direction: column-reverse;
     background-image: url(../Images/header-bg.svg);
     background-size: cover;
@@ -117,7 +118,7 @@
       margin-top: 15px;
   
       h1 {
-        font-size: 35px;
+        font-size: 25px;
       }
   
       p {
@@ -156,18 +157,14 @@
       &__content {
         width: 50%;
     
-        h1 {
-          font-size: 35px;
-        }
-    
         button {
           margin-top: 0;
         }
     
       }
     
-      &_img img {
-        height: 180px;
+      &__img img {
+        height: 200px;
     
       }
     }
@@ -185,7 +182,7 @@
         width: 50%;
     
         h1 {
-          font-size: 45px;
+          font-size: 40px;
         }
     
         button {
@@ -212,7 +209,7 @@
         width: 40%;
     
         h1 {
-          font-size: 55px;
+          font-size: 45px;
         }
   
         button {

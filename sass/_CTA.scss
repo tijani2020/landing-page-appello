@@ -1,19 +1,23 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-.action {
+.CTA {
     @include flex-center();
+    height: 100%;
+    
   
     &__container {
       @include flex-center();
       justify-content: space-around;
+      flex-direction: column;
+
     }
   
       &__features {
-        width: 45%;
+        width: 100%;
 
         h3 {
-          font-size: 35px;
+          font-size: 25px;
         }
   
         p {
@@ -45,11 +49,62 @@
       }
 
       &__img {
-        width: 45%;
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+
 
         img {
-          height: 350px;
+          height: 200px;
         }
       }
     
   }
+
+
+  @include tablet-desktop {
+    .CTA {
+    
+      &__features {
+        width: 75%;
+      
+    }
+    
+      &__img {
+        width: 75%;
+    
+        img {
+          height: 300px;
+        }
+      }
+    }
+  }
+
+
+
+
+
+  @include large-devices {
+.CTA {
+
+  &__container {
+      @include flex-space-between();
+      flex-direction: row;
+  }
+
+  &__features {
+    width: 45%;
+  
+}
+
+  &__img {
+    width: 45%;
+
+    img {
+      height: 350px;
+    }
+  }
+}
+
+}
+  

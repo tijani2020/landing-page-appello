@@ -41,10 +41,21 @@
      }
    }
   
+
+   .services__head {
+    h3 {
+      font-size: 20px
+    }
+  }
+
   @include tablet-desktop () {
     
     #services  {
-  
+      .services__head {
+        h3 {
+          font-size: 25px
+        }
+      }
       .services__items {
         flex-direction: row;
         flex-wrap: wrap;

@@ -11,13 +11,13 @@
       position: relative;
 
       img {
-        height: 500px;
+        height: 200px;
         border-radius: 15px;
       }
   
       i {
         position: absolute;
-        font-size: 70px;
+        font-size: 45px;
         color: $primary-color;
         border-radius: 50%;
         background-color: #fff;
@@ -32,4 +32,49 @@
       text-align: center;
     }
   
+  }
+
+  @include tablet {
+
+    .vedio__cotainer {
+
+      img {
+        height: 300px;
+      }
+
+      i {
+        font-size: 55px;
+      }
+    }
+  }
+
+
+  @include desktop {
+
+    .vedio__cotainer {
+
+      img {
+        height: 400px;
+      }
+
+      i {
+        font-size: 65px;
+      }
+    }
+  }
+
+
+  @include large-devices{
+
+    .vedio__cotainer {
+
+      img {
+        height: 500px;
+
+      }
+
+      i {
+        font-size: 70px;
+      }
+    }
   }

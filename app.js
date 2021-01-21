@@ -1,5 +1,5 @@
 // Partners slider
-
+/*
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   centeredSlides: true,
@@ -15,6 +15,28 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+*/
+/* ====== for testimonials from swiper ======== */
+
+var mySwiper = new Swiper('.swiper-container', {
+  // autoplay
+  autoplay: {
+    delay: 5000,
+  },
+
+   // Optional parameters
+   direction: 'horizontal',
+   loop: true,
+ 
+   // pagination
+   pagination: {
+     el: '.swiper-pagination',
+     clickable: true,
+   },
+
+});
+
+/* ======= for testimonials from swiper ======= */
 
 // mobile nav start
 

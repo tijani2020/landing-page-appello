@@ -17,6 +17,9 @@
 <!-- font awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     
+<!-- for testimonials from swiper -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css">
+<!-- for testimonials from swiper -->
 
 </head>
 <body>
@@ -70,13 +73,20 @@
 
 <!--start main-->
     <main>
-        <section id="partners">
-            <img class="partners__img" src="Images/partners/customer-logo-1.png" alt="">
-            <img class="partners__img" src="Images/partners/customer-logo-2.png" alt="">
-            <img class="partners__img" src="Images/partners/customer-logo-3.png" alt="">
-            <img class="partners__img" src="Images/partners/customer-logo-4.png" alt="">
-            <img class="partners__img" src="Images/partners/customer-logo-5.png" alt="">
-            <img class="partners__img" src="Images/partners/customer-logo-6.png" alt="">
+        <section id="partners" class="swiper-container">
+         
+                <div class="swiper-wrapper">
+               
+                <div class="swiper-slide"><img src="Images/partners/customer-logo-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="Images/partners/customer-logo-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="Images/partners/customer-logo-3.png" alt=""></div>
+                <div class="swiper-slide"><img src="Images/partners/customer-logo-4.png" alt=""></div>
+                <div class="swiper-slide"><img src="Images/partners/customer-logo-5.png" alt=""></div>
+                <div class="swiper-slide"><img src="Images/partners/customer-logo-6.png" alt=""></div>
+                         
+               </div> 
+               <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
         </section>
 
         <section id="services">
@@ -365,6 +375,9 @@
 
 
 <!--scripts-->
+
+ <!-- Swiper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.7/swiper-bundle.min.js"></script>
 
     <script src="app.js"></script>
 </body>

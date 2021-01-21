@@ -1,3 +1,21 @@
+// Partners slider
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 30,
+  loop: true,
+  clickable: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 // mobile nav start
 
 const hamber = document.getElementById('hamber')
@@ -21,3 +39,4 @@ hamber.addEventListener('click', (e) => {
 }) 
 
 // mobile nav end
+

@@ -3,7 +3,7 @@
 
   .swiper-container {
     @include flex-center();
-    height: 150px;
+    height: 100px;
     width: 80%;
     .swiper-wrapper {
     
@@ -12,9 +12,23 @@
       height: 50px;
       width: 170px;
       @include flex-center();
+
     }
     }
     .swiper-pagination-bullet-active {
       background-color: #5F4DEE !important;
   }
+  }
+
+
+  .swiper-slide {
+      img {
+        height: 20px;
+      }
+  }
+
+  @include tablet-desktop {
+    .swiper-slide img {
+      height: 30px;
+    }
   }

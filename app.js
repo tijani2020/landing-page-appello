@@ -1,6 +1,5 @@
 // Partners slider
-/*
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container1', {
   slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 30,
@@ -9,13 +8,11 @@ var swiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 1000,
     disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  }
+ 
 });
-*/
+
+
 /* ====== for testimonials from swiper ======== */
 
 var mySwiper = new Swiper('.swiper-container', {

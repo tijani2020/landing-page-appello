@@ -13,15 +13,21 @@ function scrollFunction() {
       
       siteName.style.color = "#5f4dee";
       navigation.style.backgroundColor = "#fff";
-        navigation.style.height = "60px";
-        linksParent.id = 'nowhite-links';
+      navigation.style.boxShadow = "0 2px 2px -2px rgba(0,0,0,.2)";
+      navigation.style.height = "60px";
+      linksParent.id = 'nowhite-links';
+      navicone.style.color = "#5f4dee"
+
     }
 
     else  {    
       siteName.style.color = "white";
         navigation.style.height = "100px";
         navigation.style.backgroundColor = "transparent";
+        navigation.style.boxShadow = "none";
         linksParent.id = 'white-links'
+        navicone.style.color = "#fff"
+
     }
 }
 

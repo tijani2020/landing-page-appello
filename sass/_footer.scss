@@ -6,7 +6,7 @@
     background-image: url(../Images/bg-footer.svg);
     background-position: center;
     background-size: cover;
-    height: 130%;
+    height: 920px;
     color: #fff;
     position: relative;
   
@@ -81,10 +81,15 @@
     text-align: center;
   }
 
+  @include tablet {
+    .footer{ 
+      height: 750px;
+    }
+  }
 
   @include desktop {
     .footer{ 
-      height: 70%;
+      height: 450px;
       
       &__infos {
       @include flex-space-between();
@@ -107,7 +112,7 @@
 
   @include large-devices {
     .footer{ 
-      height: 70%;
+      height: 450px;
       
       &__infos {
       @include flex-space-between();

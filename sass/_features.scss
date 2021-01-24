@@ -4,6 +4,7 @@
 #features {
     background-color: $secondary-color;
     height: 100%;
+    top: 60px;
   
     .features__container {
       @include flex-center();
@@ -12,6 +13,7 @@
   
       .features__head p {
         margin-top: 15px;
+        width: 100%;
       }
   
   }
@@ -48,7 +50,6 @@
   .features__details{
     @include flex-space-between();
     flex-direction: column;
-    margin-top: 15px;
 
     &__img {
       width: 80%;

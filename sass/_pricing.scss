@@ -19,7 +19,6 @@
   .pricing__options {
     @include flex-center ();
     flex-direction: column;
-    margin-top: 50px;
     width: 100%;
 
     &__item {

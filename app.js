@@ -1,3 +1,34 @@
+/* ====== sticky navbar on scroll start ======== */
+
+const navigation = document.getElementById('navbar')
+const siteName = document.getElementById('site-name')
+const linksParent = document.getElementById('white-links')
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)  {
+      
+      siteName.style.color = "#5f4dee";
+      navigation.style.backgroundColor = "#fff";
+        navigation.style.height = "60px";
+        linksParent.id = 'nowhite-links';
+    }
+
+    else  {    
+      siteName.style.color = "white";
+        navigation.style.height = "100px";
+        navigation.style.backgroundColor = "transparent";
+        linksParent.id = 'white-links'
+    }
+}
+
+/* ====== sticky navbar on scroll end ======== */
+
+
+
 // Partners slider
 var swiper = new Swiper('.swiper-container1', {
   slidesPerView: 3,

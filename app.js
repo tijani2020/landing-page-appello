@@ -36,7 +36,7 @@ function scrollFunction() {
 
 
 // Partners slider
-var swiper = new Swiper('.swiper-container1', {
+var swiper = new Swiper('.swiper1', {
   slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 30,
@@ -52,7 +52,7 @@ var swiper = new Swiper('.swiper-container1', {
 
 /* ====== for testimonials from swiper ======== */
 
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper2', {
   // autoplay
   autoplay: {
     delay: 5000,
@@ -64,7 +64,7 @@ var mySwiper = new Swiper('.swiper-container', {
  
    // pagination
    pagination: {
-     el: '.swiper-pagination',
+     el: '.swiper-pagination2',
      clickable: true,
    },
 

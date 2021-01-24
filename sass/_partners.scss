@@ -1,7 +1,7 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-  .swiper-container1 {
+  .swiper1 {
     @include flex-center();
     height: 100px;
     width: 80%;
@@ -19,7 +19,6 @@
       background-color: #5F4DEE !important;
   }
   }
-
 
   .swiper-slide {
       img {

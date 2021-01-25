@@ -20,16 +20,3 @@
   }
   }
 
-  .swiper-slide {
-      img {
-        height: 20px;
-      }
-  }
-
-
-  @include tablet-desktop {
-    .swiper-slide img {
-      height: 25px;
-    }
-  }
-

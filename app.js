@@ -35,18 +35,41 @@ function scrollFunction() {
 
 
 
-// Partners slider
 var swiper = new Swiper('.swiper1', {
-  slidesPerView: 3,
-  centeredSlides: true,
-  spaceBetween: 30,
-  loop: true,
-  clickable: true,
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
   autoplay: {
     delay: 1000,
-    disableOnInteraction: false,
+  },
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
   }
- 
 });
 
 

@@ -34,6 +34,23 @@ function scrollFunction() {
 /* ====== sticky navbar on scroll end ======== */
 
 
+// video popup
+
+const mybtn = document.getElementById('mybtn');
+const hidPopup = document.getElementById('hidepopup');
+const videoBox = document.getElementById('videobox');
+
+
+mybtn.addEventListener('click', ()=> {
+    videoBox.style.display = "flex";
+})
+
+hidPopup.addEventListener('click', ()=> {
+    videoBox.style.display = "none";
+})
+
+// video popup
+
 
 var swiper = new Swiper('.swiper1', {
   // Default parameters

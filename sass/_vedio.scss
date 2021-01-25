@@ -57,46 +57,88 @@
   }
 }
 
+/* video popup */ 
 
-  @include desktop {
+#videobox {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(35, 33, 33, 0.975);
+  z-index: 1100;
 
-    .vedio{ 
-      &__cotainer {
-
-      img {
-        height: 400px;
-      }
-
-      i {
-        font-size: 65px;
-      }
-    }
+  i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: $primary-color;
+    
   }
 
-  p {
-    width: 70%;
+  iframe {
+    width: 300px;
+    height: 170px;
+}
+
+}
+
+@include tablet-desktop {
+
+  #videobox iframe {
+    width: 600px;
+    height: 340px;
+}
+
+}
+
+/* video popup */ 
+
+
+@include desktop {
+
+  .vedio{ 
+    &__cotainer {
+
+    img {
+      height: 400px;
+    }
+
+    i {
+      font-size: 65px;
+      cursor: pointer;
+    }
   }
 }
 
+p {
+  width: 70%;
+}
+}
 
-  @include large-devices{
 
-    .vedio {
+@include large-devices{
 
-    &__cotainer {
+  .vedio {
 
-      img {
-        height: 500px;
+  &__cotainer {
 
-      }
+    img {
+      height: 500px;
 
-      i {
-        font-size: 70px;
-      }
     }
 
-   p {
-    width: 65%;
-   }
+    i {
+      font-size: 70px;
+    }
   }
+
+ p {
+  width: 65%;
+ }
+}
 }

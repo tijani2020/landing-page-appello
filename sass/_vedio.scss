@@ -82,8 +82,9 @@
   }
 
   iframe {
-    width: 300px;
+    width: 282px;
     height: 170px;
+    border: 10px solid #fff;
 }
 
 }
@@ -91,7 +92,7 @@
 @include tablet-desktop {
 
   #videobox iframe {
-    width: 600px;
+    width: 586px;
     height: 340px;
 }
 

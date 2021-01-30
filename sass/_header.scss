@@ -77,17 +77,6 @@
     display: none;
     height: 500px;
     margin-top: 70px;
-    animation: navmenu 500ms ease-in;
-
-    @keyframes navmenu {
-      from {
-        height: 0;
-      }
-
-      to {
-        height: 500px;
-      }
-    }
 
     .mobile-nav__items {
       @include flex-space-between();

@@ -135,3 +135,33 @@ hamber.addEventListener('click', (e) => {
 
 // mobile nav end
 
+
+// GSAP
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+gsap.from(".features__details__img", { 
+    scrollTrigger: {
+        trigger: ".features__details__img",
+        toggleActions: "restart none none none"
+    },
+   duration: 1.5,
+   ease: "circ.out", 
+   x: -300
+  });
+
+
+gsap.from(".features__details__content", { 
+    scrollTrigger: {
+        trigger: ".features__details__content",
+        toggleActions: "restart none none none"
+    },
+   duration: 1.5,
+   ease: "circ.out", 
+    x: 300 
+  });
+
+
+

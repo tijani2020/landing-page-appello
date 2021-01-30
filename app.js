@@ -48,7 +48,25 @@ videoBox.addEventListener('click', ()=> {
     videoBox.style.display = "none";
 })
 
-// video popup
+// video vimeo control
+
+var iframe = document.getElementById('vimeovideo');
+
+// $f == Froogaloop
+var player = $f(iframe);
+
+// bind events
+var playButton = document.getElementById("mybtn");
+playButton.addEventListener("click", function() {
+  player.api("play");
+});
+
+var pauseButton = document.getElementById("videobox");
+pauseButton.addEventListener("click", function() {
+  player.api("pause");
+});
+
+
 
 
 var swiper = new Swiper('.swiper1', {

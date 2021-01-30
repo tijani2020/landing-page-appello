@@ -16,7 +16,7 @@ function scrollFunction() {
       navigation.style.boxShadow = "0 2px 2px -2px rgba(0,0,0,.2)";
       navigation.style.height = "60px";
       linksParent.id = 'nowhite-links';
-      navicone.style.color = "#5f4dee"
+      navicone.style.display = "none"
 
     }
 
@@ -25,8 +25,8 @@ function scrollFunction() {
         navigation.style.height = "100px";
         navigation.style.backgroundColor = "transparent";
         navigation.style.boxShadow = "none";
-        linksParent.id = 'white-links'
-        navicone.style.color = "#fff"
+        linksParent.id = 'white-links';
+        navicone.style.display = "block"
 
     }
 }
@@ -138,11 +138,13 @@ const mobileNav = document.getElementById('mobile-nav')
 mobileNav.style.display = "none";
 
 hamber.addEventListener('click', (e) => {
+  gsap.from(".mobile-nav__item", { duration: 1, opacity: 0, x: 100, stagger: 0.4});
 
   if (mobileNav.style.display === "block") {
     mobileNav.style.display = "none";
     navicone.className = "fas fa-bars"
     navicone.style.color = "#fff"
+  
 
   } else {
     mobileNav.style.display = "block";
@@ -151,6 +153,7 @@ hamber.addEventListener('click', (e) => {
   }
 }) 
 
+
 // mobile nav end
 
 
@@ -158,7 +161,9 @@ hamber.addEventListener('click', (e) => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 // hero 
+
 gsap.from(".header__img", { duration: 1, opacity: 0, x: 100});
 gsap.from(".hero-item", { delay:1, duration: 1, opacity: 0, y: 50, stagger: 0.4 });
 
